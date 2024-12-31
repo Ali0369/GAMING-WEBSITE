@@ -66,9 +66,9 @@ const games = [
 ]
 function displayGames(gamesToDisplay, customMessage = null) {
     const gameContainer = document.getElementById('gameContainer');
-    gameContainer.innerHTML = ''; // Clear previous results
+    gameContainer.innerHTML = ''; 
 
-    // Check if there are any games to display
+  
     if (gamesToDisplay.length === 0) {
         const message = customMessage || 'No games found';
         const noGamesMessage = document.createElement('div');
@@ -107,12 +107,12 @@ document.getElementById('genreFilter').addEventListener('change', function() {
 function searchGame() {
     const searchTerm = document.getElementById('searchBar').value.toLowerCase();
     
-    // Filter games based on the search term
+  
     const filteredGames = games.filter(game => 
         game.name.toLowerCase().includes(searchTerm) 
     );
 
-    // If no games are found, show an error message
+  
     if (filteredGames.length === 0) {
         displayGames([], 'Game not found. Please try another name.'); 
     } else {
