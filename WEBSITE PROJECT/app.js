@@ -64,15 +64,16 @@ const games = [
     { name: 'Bingo Solo', genre: 'board', image: "https://cdn.dribbble.com/users/204359/screenshots/5483357/star_dribble_1.gif", iframeSrc:"https://www.y8.com/embed/bingo_solo" },
     { name: 'Backgammon', genre: 'board', image: "https://www.gammonvillage.com/images/photos/pos05.gif",iframeSrc:"https://www.y8.com/embed/backgammon_marketjs" },
 ]
-function displayGames(gamesToDisplay) {
+function displayGames(gamesToDisplay, customMessage = null) {
     const gameContainer = document.getElementById('gameContainer');
     gameContainer.innerHTML = ''; // Clear previous results
 
     // Check if there are any games to display
     if (gamesToDisplay.length === 0) {
+        const message = customMessage || 'No games found';
         const noGamesMessage = document.createElement('div');
         noGamesMessage.className = 'no-games-message';
-        noGamesMessage.innerText = 'No games found';
+        noGamesMessage.innerText = message;
         gameContainer.appendChild(noGamesMessage);
     } else {
         gamesToDisplay.forEach(game => {
@@ -89,8 +90,6 @@ function displayGames(gamesToDisplay) {
     }
 }
 
-
-
 function filterGames(genre) {
     if (genre === 'all') {
         displayGames(games);
@@ -100,49 +99,26 @@ function filterGames(genre) {
     }
 }
 
-document.getElementById('searchBar').addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase();
-    const filteredGames = games.filter(game => 
-        game.name.toLowerCase() === searchTerm 
-    );
-
-   
-    if (filteredGames.length === 0) {
-        displayGames([]); 
-        const errorMessage = document.createElement('div');
-        errorMessage.className = 'no-games-message';
-        errorMessage.innerText = 'Game not found. Please try another name.';
-        document.getElementById('gameContainer').appendChild(errorMessage);
-    } else {
-        displayGames(filteredGames);
-    }
-});
-
-
 document.getElementById('genreFilter').addEventListener('change', function() {
     const selectedGenre = this.value;
     filterGames(selectedGenre);
 });
 
-
-displayGames(games);
-
 function searchGame() {
     const searchTerm = document.getElementById('searchBar').value.toLowerCase();
     
-    
+    // Filter games based on the search term
     const filteredGames = games.filter(game => 
         game.name.toLowerCase().includes(searchTerm) 
     );
 
-   
+    // If no games are found, show an error message
     if (filteredGames.length === 0) {
-        displayGames([]); 
-        const errorMessage = document.createElement('div');
-        errorMessage.className = 'no-games-message';
-        errorMessage.innerText = 'Game not found. Please try another name.';
-        document.getElementById('gameContainer').appendChild(errorMessage);
+        displayGames([], 'Game not found. Please try another name.'); 
     } else {
         displayGames(filteredGames);
     }
 }
+
+// Initial display of all games
+displayGames(games);
