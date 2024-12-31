@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GameZone</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav>
+        <div class="container1">
+            <div class="logo-container">
+                <img src="./1.png" alt="Website Logo" class="website-logo"> 
+                <h4 class="title">
+                    <span class="letter">G</span>
+                    <span class="letter">A</span>
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">Z</span>
+                    <span class="letter">O</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </h4> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+             
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->
+                </div>
+                <li class="logout-button">
+                    <a href="login.html">
+                        <ion-icon name="log-out-outline"></ion-icon> Logout
+                    </a>
+                </li>
+            </ul>
+          
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Address:</strong> 123 Game Street, Fun City, FC 12345</p>
+            <p><strong>Email:</strong> <a href="mailto:info@onlinegames.com">info@onlinegames.com</a></p>
+            <div class="social-links">
+                <strong>Follow us:</strong>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container2">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2024 GameZone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>

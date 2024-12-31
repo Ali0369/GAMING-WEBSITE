@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url(./Cool-Wallpapers-4K-109.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+    position: absolute; 
+    bottom: -4px; 
+    left: -20px; 
+}
+
+.website-logo {
+    width: 70px; 
+    height: auto; 
+    margin-right: 8px; 
+}
+
+.title {
+    font-size: 24px; 
+    color: #ffffff; 
+    font-weight: bold; 
+    letter-spacing: 8px;
+}
+
+nav {
+    background-color: #051320; 
+    padding: 15px 20px; 
+    height: 6vh; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    display: flex;
+}
+
+.letter {
+    color: #ffffff;
+    animation: color-change 4s infinite forwards;
+}
+
+@keyframes color-change {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: #160f0f33;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.3s; } 
+.letter:nth-child(3) { animation-delay: 0.6s; }
+.letter:nth-child(4) { animation-delay: 0.9s; }
+.letter:nth-child(5) { animation-delay: 1.2s; }
+.letter:nth-child(6) { animation-delay: 1.5s; }
+.letter:nth-child(7) { animation-delay: 1.8s; }
+.letter:nth-child(8) { animation-delay: 2.1s; }
+
+.container1 {
+    max-width: 1900px; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 5vh; 
+    position: relative; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+}
+
+.nav-links li {
+    margin: 5px 20px; 
+}
+
+.nav-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: color 0.3s; 
+}
+
+.nav-links a:hover {
+    text-decoration: underline; 
+    color: #ffcc00; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#searchBar {
+    width: 250px; 
+    height: 30px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+    margin-right: 5px; 
+    font-size: 16px; 
+}
+
+.search-icon {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF; 
+    color: white; 
+    border-radius: 15px; 
+    transition: background-color 0.3s; 
+}
+
+.search-icon:hover {
+    background-color: #0056b3; 
+}
+
+footer {
+    margin-top: 75px;
+    background-color: #051320; 
+    color: #ffffff; 
+    padding: 5px; 
+    text-align: center; 
+    position: relative; 
+    width: 100%; 
+}
+
+.container2 {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 8px 0px 1px; 
+} 
+
+.footer-links {
+    list-style: none; 
+    padding: 0; 
+    margin: 10px; 
+    padding: 1px 10px;
+}
+
+.footer-links li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+.footer-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+.main-content {
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
+
+.game-section {
+    margin: 0;
+    background-color: rgba(26, 14, 14, 0.884);
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    display: flex; 
+    gap: 24px; 
+    max-width: 1350px; 
+    width: 100%; 
+    border-bottom-right-radius: 22px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
+.game-container {
+    flex: 1; 
+    max-width: 1000px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.game-box {
+    height: 600px;
+    background-color: #000; 
+    aspect-ratio: 16/9; 
+    width: 180%; 
+    max-width: 1000px; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.game-display {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 24px; 
+}
+
+.game-info {
+    margin-right: 700px;
+    margin-top: -25px;
+    padding: 20px 0; 
+    border-bottom: 1px solid #e5e5e5; 
+}
+
+.game-title {
+    max-width: 1000px;
+    display: inline;
+    color: #ffffff; 
+    font-size: 20px; 
+    margin-bottom: 12px; 
+    text-align: left; 
+}
+
+.recommended-games {
+    flex: 1; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.recommended-title {
+    font-size: 26px; 
+    color: white; 
+    margin-bottom: 10px; 
+}
+
+.recommended-games img {
+    border-radius: 10px;
+    width: 250px; 
+    height: 150px; 
+    max-width: 700px; 
+    max-height: 700px; 
+}
+
+.game-panel {
+    color: #ffffff;
+    margin-top: 20px; 
+}
+
+.game-name {
+    font-size: 18px; 
+    color: white; 
+    margin: 5px 0; 
+    line-height: 1.2; 
+}
+
+.game-card {
+    width: 160%;
+    display: flex; 
+    gap: 12px; 
+    margin-bottom: 25px; 
+    cursor: pointer; 
+}
+
+.thumbnail {
+    width: 280px; 
+    height: 140px; 
+    background-color: #e5e5e5; 
+    border-radius: 8px; 
+}
+
+#gameIframe {
+    width: 100%; 
+    height: 600px; 
+    border: none; 
+    border-radius: 10px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+#gameName {
+    text-align: center; 
+    font-size: 24px; 
+    margin-top: 10px; 
+    color: #051320; 
+}

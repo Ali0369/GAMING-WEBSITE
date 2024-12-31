@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - Game Zone</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+
+    <nav>
+        <div class="container1">
+            <div class="logo-container">
+                <img src="./1.png" alt="Website Logo" class="website-logo"> 
+                <h4 class="title">
+                    <span class="letter">G</span>
+                    <span class="letter">A</span>
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">Z</span>
+                    <span class="letter">O</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </h4> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->    
+                </div>
+                <li class="logout-button">
+                    <a href="login.html">
+                        <ion-icon name="log-out-outline"></ion-icon> Logout
+                    </a>
+                </li>
+            </ul>
+          
+        </div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="game-zone">
+            <h1 class="game-zone-title">
+                <span style="color: #a81f00;">G</span>
+                <span style="color: #a81f00;">A</span>
+                <span style="color: #a81f00;">M</span>
+                <span style="color: #a81f00;">E</span>
+                
+                <span style="color: #ffffff;">Z</span>
+                <span style="color: #ffffff;">O</span>
+                <span style="color: #ffffff;">N</span>
+                <span style="color: #ffffff;">E</span>
+            </h1>
+            </div>
+            <br>
+            <p class="tagline">Your ultimate destination for gaming fun!</p>   
+        </section>
+        <section id="featured" class="featured-games">
+            <h2>Featured Games</h2>
+            <br>
+            <div class="game-grid">
+                <div class="game-container">
+                    <div class="game-tile">
+                        <img src="https://media2.giphy.com/media/l0MYGbakmudk5GIY8/giphy.gif?cid=6c09b9528rkpd18xjwxmb1ac0zpore66ooqn0rmcvj01nywc&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Game 1">
+                    </div>
+                   <h3>Dominoes</h3></a> 
+                </div>
+                <div class="game-container">
+                    <div class="game-tile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmSrOCpy1AzVomCnjr6wUscsYjPEgu2PHQvoxYJKfdQ0PIeMVBYyRzZ63-jwk6mEJ8qs&usqp=CAU" alt="Game 2">
+                    </div>
+                    <h3>Nightmare Creatures</h3>
+                </div>
+                <div class="game-container">
+                    <div class="game-tile">
+                        <img src="https://img.itch.zone/aW1hZ2UvMjk2NTA5Ni8xNzk4MzYxMS5qcGc=/original/e5m7wc.jpg" alt="Game 3">
+                    </div>
+                    <h3>Volunteer to the Darkness</h3>
+                </div>
+               
+                <div class="game-container">
+                    <div class="game-tile">
+                        <img src="https://cdn.dribbble.com/users/204359/screenshots/5483357/star_dribble_1.gif" alt="Game 4">
+                    </div>
+                    <h3>Bingo Solo</h3>
+                </div> 
+        </section>
+        <div class="startplay">
+        <button class="cta-button"><a href="games.html">Start Playing</a></button>
+    </div>
+        <section id="community" class="community">
+            <h2>Join Our Community</h2>
+            <p>Connect with fellow gamers and share your experiences!</p>
+            <button class="community-button">Visit Forum</button>
+        </section>
+
+        <section id="news" class="news-updates">
+            <h2>Latest News</h2>
+            <article class="news-article">
+                <h3>Game Update: New Features!</h3>
+                <p>Check out the latest features added to your favorite games!</p>
+            </article>
+            <article class="news-article">
+                <h3>Upcoming Events</h3>
+                <p>Don't miss out on our upcoming gaming tournaments!</p>
+            </article>
+        </section>
+
+        <section id="subscribe" class="newsletter">
+            <h2>Subscribe for Updates</h2>
+            <br>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container2">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2024 GameZone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

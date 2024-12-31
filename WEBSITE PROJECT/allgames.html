@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Play Game</title>
+    <link rel="stylesheet" href="allgames.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="container1">
+            <div class="logo-container">
+                <img src="./1.png" alt="Website Logo" class="website-logo"> 
+                <h4 class="title">
+                    <span class="letter">G</span>
+                    <span class="letter">A</span>
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">Z</span>
+                    <span class="letter">O</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </h4> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->
+                </div>
+                <li class="logout-button">
+                    <a href="login.html">
+                        <ion-icon name="log-out-outline"></ion-icon> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+      
+        <div class="game-section">
+            <div class="game-container">
+                <div class="game-box">
+                  
+                    <div class="game-display" id="gameIframe">Game Display Area</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title" id="gameName" style="color: white;">Awesome Game Title</h2>
+                    <div class="game-stats">
+                       
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="recommended-games">
+                <h3 class="recommended-title">Recommended Games</h3>
+                <div id="recommendedContainer">
+                 
+                </div>
+            </div>
+        </div>
+    </main>
+
+  
+    <footer>
+        <div class="container2">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2024 GameZone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script> 
+    <script>
+     
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameSrc = urlParams.get('src');
+        const gameTitle = urlParams.get('name');
+
+
+     
+        const currentGame = games.find(game => game.iframeSrc === gameSrc || game.name === gameTitle);
+
+    
+        if (currentGame) {
+            document.getElementById('gameIframe').innerHTML = `<iframe src="${gameSrc}" style="width: 100%; height: 100%; border: none;"></iframe>`;
+            document.getElementById('gameName').innerText = gameTitle;
+        } else {
+            document.getElementById('gameName').innerText = "Game not found"; 
+        }
+
+     
+        function displayRecommendedGames() {
+            const recommendedContainer = document.getElementById('recommendedContainer');
+            const recommendedGames = getRandomGames(3);
+          
+            recommendedContainer.innerHTML = '';
+
+         
+            if (recommendedGames.length === 0) {
+                const noGamesMessage = document.createElement('div');
+                noGamesMessage.className = 'no-games-message';
+                noGamesMessage.innerText = 'No recommended games available';
+                recommendedContainer.appendChild(no-gamesMessage);
+            } else {
+                recommendedGames.forEach(game => {
+                    const gamePanel = document.createElement('div');
+                    gamePanel.className = 'game-panel';
+                    gamePanel.innerHTML = `
+                        <a href="allgames.html?src=${encodeURIComponent(game.iframeSrc)}&name=${encodeURIComponent(game.name)}" style="text-decoration: none; color: inherit;">
+                            <img src="${game.image}" alt="${game.name}">
+                            <h3>${game.name}</h3>
+                        </a>
+                    `;
+                    recommendedContainer.appendChild(gamePanel);
+                });
+            }
+        }
+
+      
+        function getRandomGames(count) {
+            const shuffled = games.sort(() => 0.5 - Math.random()); 
+            return shuffled.slice(0, count);
+        }
+
+      
+        displayRecommendedGames();
+    </script>
+      <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>

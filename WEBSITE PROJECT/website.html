@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+     <nav>
+        <div class="container1">
+            <div class="logo">GameZone</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->
+                </div>
+            </ul>
+          
+        </div>
+    </nav>
+
+    <!-- Game Categories Filter -->
+    <section id="games" class="game-categories">
+        <h2>Filter by Category</h2>
+        <div class="filters">
+           
+            <button class="filter-btn" onclick="filterGames('action')">Action</button>
+            <button class="filter-btn" onclick="filterGames('adventure')">Adventure</button>
+            <button class="filter-btn" onclick="filterGames('puzzle')">Puzzle</button>
+            <button class="filter-btn" onclick="filterGames('rpg')">RPG</button>
+            <button class="filter-btn" onclick="filterGames('strategy')">Strategy</button>
+            <button class="filter-btn" onclick="filterGames('sports')">Sports</button>
+            <button class="filter-btn" onclick="filterGames('simulation')">Simulation</button>
+            <button class="filter-btn" onclick="filterGames('racing')">Racing</button>
+            <button class="filter-btn" onclick="filterGames('multiplayer')">Multiplayer</button>
+            <button class="filter-btn" onclick="filterGames('casual')">Casual</button>
+            <button class="filter-btn" onclick="filterGames('card')">Card Games</button>
+            <button class="filter-btn" onclick="filterGames('board')">Board Games</button>
+            <button class="filter-btn" onclick="filterGames('all')">All</button>
+        
+        </div>
+    </section>
+
+    <!-- Game Display Section -->
+    <!-- <section class="game-display">
+        <h2>Available Games</h2>
+        <div class="game-container">
+           
+            <div class="game-panel">
+                <img src="game1.jpg" alt="Game 1">
+                <h3>Game Title 1</h3>
+            </div>
+            <div class="game-panel">
+                <img src="game2.jpg" alt="Game 2">
+                <h3>Game Title 2</h3>
+            </div>
+            <div class="game-panel">
+                <img src="game3.jpg" alt="Game 3">
+                <h3>Game Title 3</h3>
+            </div> -->
+            <div class="game-display">
+                <h2>Available Games</h2>
+                <div class="game-container" id="gameContainer">
+                    <!-- Game panels will be dynamically inserted here -->
+                </div>
+            </div>
+        
+            <!-- Repeat for more game panels -->
+            <!-- You can add up to 50 game panels as needed -->
+        </div>
+       
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container2">
+            <p>&copy; 2023 Online Games. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Available Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script> 
+</head>
+<body>
+   
+    <nav>
+        <div class="container1">
+            <div class="logo-container">
+                <img src="./1.png" alt="Website Logo" class="website-logo"> 
+                <h4 class="title">
+                    <span class="letter">G</span>
+                    <span class="letter">A</span>
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">Z</span>
+                    <span class="letter">O</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </h4> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->
+                </div>
+                <li class="logout-button">
+                    <a href="login.html">
+                        <ion-icon name="log-out-outline"></ion-icon> Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Game Categories Filter -->
+    <section id="games" class="game-categories">
+        <h2>Filter by Category</h2>
+        <div class="filters">
+            <button class="filter-btn" onclick="filterGames('action')">Action</button>
+            <button class="filter-btn" onclick="filterGames('adventure')">Adventure</button>
+            <button class="filter-btn" onclick="filterGames('puzzle')">Puzzle</button>
+            <button class="filter-btn" onclick="filterGames('rpg')">RPG</button>
+            <button class="filter-btn" onclick="filterGames('strategy')">Strategy</button>
+            <button class="filter-btn" onclick="filterGames('sports')">Sports</button>
+            <button class="filter-btn" onclick="filterGames('simulation')">Simulation</button>
+            <button class="filter-btn" onclick="filterGames('racing')">Racing</button>
+            <button class="filter-btn" onclick="filterGames('multiplayer')">Multiplayer</button>
+            <button class="filter-btn" onclick="filterGames('casual')">Casual</button>
+            <button class="filter-btn" onclick="filterGames('card')">Card Games</button>
+            <button class="filter-btn" onclick="filterGames('board')">Board Games</button>
+            <button class="filter-btn" onclick="filterGames('all')">All</button>
+        </div>
+    </section>
+
+    <!-- Game Display Section -->
+    <section class="game-display">
+        <h2>Available Games</h2>
+        <div class="game-container" id="gameContainer">
+            <!-- Game panels will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container2">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2024 GameZone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>

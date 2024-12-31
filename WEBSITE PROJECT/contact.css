@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./Cool-Wallpapers-4K-109.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    display: flex;
+}
+
+.letter {
+    color: #ffffff;
+    animation: color-change 4s infinite forwards;
+}
+
+@keyframes color-change {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: #160f0f33;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.3s; } 
+.letter:nth-child(3) { animation-delay: 0.6s; }
+.letter:nth-child(4) { animation-delay: 0.9s; }
+.letter:nth-child(5) { animation-delay: 1.2s; }
+.letter:nth-child(6) { animation-delay: 1.5s; }
+.letter:nth-child(7) { animation-delay: 1.8s; }
+.letter:nth-child(8) { animation-delay: 2.1s; }
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+    position: absolute; 
+    bottom: -4px;
+    left: -20px; 
+}
+
+.website-logo {
+    width: 70px; 
+    height: auto; 
+    margin-right: 8px; 
+}
+
+.title {
+    font-size: 24px; 
+    color: #ffffff; 
+    font-weight: bold; 
+    letter-spacing: 8px;
+}
+
+nav {
+    background-color: #051320; 
+    padding: 15px 20px; 
+    height: 6vh; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container1 {
+    max-width: 1900px; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 5vh; 
+    position: relative; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+}
+
+.nav-links li {
+    margin: 5px 20px; 
+}
+
+.nav-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: color 0.3s; 
+}
+
+.nav-links a:hover {
+    text-decoration: underline; 
+    color: #ffcc00; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; 
+}
+
+#searchBar {
+    background-color: white;
+    width: 250px; 
+    height: 30px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 15px; 
+    margin-right: 5px; 
+    font-size: 16px; 
+}
+
+.search-icon {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF; 
+    color : white; 
+    border-radius: 15px; 
+    transition: background-color 0.3s; 
+    margin-bottom: 10px;
+}
+
+.search-icon:hover {
+    background-color: #0056b3; 
+}
+
+footer {
+    background-color: #051320; 
+    color: #ffffff; 
+    padding: 10px; 
+    text-align: center; 
+    width: 100%; 
+    margin-top: 12%; 
+}
+
+.container2 {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 8px 0; 
+} 
+
+.footer-links {
+    list-style: none; 
+    padding: 0; 
+    margin: 10px; 
+}
+
+.footer-links li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+.footer-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+.container {
+    max-width: 800px; 
+    margin: 116px auto; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.container h1 {
+    color: #000000;
+}
+
+.social-links {
+    margin: 10px 0; 
+}
+
+.social-links a {
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #000000; 
+    font-style: italic;
+}
+
+.contact-form {
+    margin-top: 20px; 
+}
+
+.contact-form p {
+    color: white; 
+}
+
+.contact-form h2 {
+    font-size: 28px; 
+    margin-bottom: 10px; 
+    color: #ffffff; 
+}
+
+form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+input, textarea {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #ffffff; 
+}
+
+input::placeholder {
+    color: #ffffff; 
+    font-style: italic; 
+}
+
+textarea::placeholder {
+    color: #ffffff; 
+    font-style: italic; 
+}
+
+button {
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #2c3e50; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.contact-info {
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px; 
+        letter-spacing: 5px; 
+    }
+    
+    .nav-links {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .nav-links li {
+        margin: 5px 0; 
+    }
+
+    #searchBar {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .search-container {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .container {
+        margin: 20px; 
+        padding: 15px; 
+    }
+
+    footer {
+        margin-top: 20px; 
+    }
+
+    .contact-form h2 {
+        font-size: 24px; 
+    }
+
+    input, textarea {
+        font-size: 14px; 
+    }
+
+    button {
+        font-size: 14px; 
+    }
+
+    .social-links a {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 18px; 
+    }
+
+    .nav-links a {
+        font-size: 16px; 
+    }
+
+    .container {
+        padding: 10px; 
+    }
+
+    input, textarea {
+        padding: 8px; 
+    }
+
+    button {
+        padding: 8px; 
+    }
+}
+
+.logout-button {
+    margin-left: auto; 
+}
+
+.logout-button a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.logout-button a:hover {
+    background-color: #a81f00; 
+    color: white; 
+}

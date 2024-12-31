@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>ABOUT - Game Zone</title>
+</head>
+<body>
+    <nav>
+        <div class="container1">
+            <div class="logo-container">
+                <img src="./1.png" alt="Website Logo" class="website-logo">
+                <h4 class="title">
+                    <span class="letter">G</span>
+                    <span class="letter">A</span>
+                    <span class="letter">M</span>
+                    <span class="letter">E</span>
+                    <span class="letter">Z</span>
+                    <span class="letter">O</span>
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                </h4> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+             
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Enter game name...">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1200px-Search_Icon.svg.png" alt="Search" class="search-icon" onclick="searchGame()"> <!-- Replace with your icon path -->
+                </div>
+                <li class="logout-button">
+                    <a href="login.html">
+                        <ion-icon name="log-out-outline"></ion-icon> Logout
+                    </a>
+                </li>
+            </ul>
+          
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>About Us</h1>
+        <p>Discover who we are and what we do.</p>
+    </header>
+    
+    <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>We strive to provide the best gaming experience, connecting players from around the world and fostering a community of gamers.</p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://i.pinimg.com/736x/41/e0/39/41e0398984b0f1a0c79acfb0694bfcce.jpg" alt="Team Member 1">
+                <h3>AREEB AHMAD</h3>
+                <p>CO-FOUNDER</p>
+            </div>
+            <div class="team-member">
+                <img   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH0mXlCTPIpCu6Xd2HDPcMmybXzRuvt5lijF5szjMoWS72qDsWBAOpyv9e4_BK1N-DHGk&usqp=CAU" alt="Team Member 2">
+                <h3>ALI SUMAIR</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.pinimg.com/236x/52/46/49/524649971a55b2f3a0dae1d537c61098.jpg" alt="Team Member 3">
+                <h3>HUMAYUN JABBAR</h3>
+                <p>Marketing Specialist</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container2">
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faqs.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <p>&copy; 2024 GameZone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+   
+</body>
+</html>
